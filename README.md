@@ -1,10 +1,10 @@
 # project-1
 
-- The project has four files, main.tf, providers.tf, variable.tf, amd output.tf.
+- The project has four files, main.tf, providers.tf, variable.tf, and output.tf.
 - Each of these files have blocks to do their intended jobs; such as 
     - providers.tf has providers blocks; azure and aws
 
-    - main.tf stores all resources. These resources
+    - main.tf stores all resources configuration. These resources
         - create two users on Azure; through two different blocks
         - create four users on AWS; through for_each meta argument
         - create two S3 buckets; through count meta argument
@@ -13,7 +13,7 @@
         - each resource use the variables stored in variable.tf
 
     - variable.tf stores all the variables used in resources blocks
-    
+
     - output.tf prints
         - whether the "me" user's password is exempt from expiring
         - the resource group "rg" id
